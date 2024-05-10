@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data collector</title>
+    <!-- ลิงค์ไอคอน --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="Page_1.css"/>
+</head>
+<body>
+
+    <div class="sideber">
+        <div class="logo">
+          <img src="image/logo_มพ.png" alt=""/> 
+          <span>โครงการผู้สูงอายุ ม.พะเยา</span>
+        </div>
+        <ul class="menu">
+            <li class="activer">
+                <a href="#">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>แบบสอบถาม</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <img src="image/user.png" alt=""/>
+                    <span>ผู้เก็บข้อมูล data collector04</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <h1>เเบบสอบถาม</h1>
+        <h5>Home - รอบการตรวจ - รายชื่อผู้เข้าร่วม</h5>
+        <button onclick="goBack()">ย้อนกลับ</button>
+        <div class="card-container">
+            <div class="card--wrapper">
+                <div class="searh--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="ค้นหา"/>
+                </div>
+
+                <div class="searh--box">
+                    <i class="far fa-calendar-alt"></i>
+                    <input type="text" placeholder="เลือกวันที่เริ่มต้น"/>
+                </div>
+
+                <div class="searh--box">
+                    <i class="far fa-calendar-alt"></i>
+                    <input type="text" placeholder="เลือกวันที่สิ้นสุด"/>
+                </div>
+            </div>
+            
+            <div class="container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>วันที่บันทึก</th>
+                      <th>ชื่อ-สกุล</th>
+                      <th>เลขบัตรประชาชน</th>
+                      <th>เเบบสอบถาม (User)</th>
+                      <th>เเบบทดสอบ PHQ9</th>
+                      <th>Mini - Cog FRAX กระดูกพรูน</th>
+                      <th>ดําเนินการ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10 พ.ค. 2567</td>
+                      <td>อัศวิน กอนจา</td>
+                      <td>0-0000-00000-XX-X</td>
+                      <td><button class="buttonsave">บันทึกแล้ว<span class="checkmark">&#10004;</span></button></td>
+                      <td><button class="buttonstart">เริ่มบันทึก<span class="Rightwards-Arrow">&#10140;</span></button></td> 
+                      <td><button class="buttonstart">เริ่มบันทึก<span class="Rightwards-Arrow">&#10140;</span></button></td>
+                    </tr>
+                    <tr>
+                      <td>10 พ.ค. 2567</td>
+                      <td>ทนงศักดิ์  หวังวนวัฒน์</td>
+                      <td>0-0000-00000-XX-X</td>
+                      <td><button class="buttonsave">บันทึกแล้ว<span class="checkmark">&#10004;</span></button></td>
+                      <td><button class="buttonstart">เริ่มบันทึก<span class="Rightwards-Arrow">&#10140;</span></button></td> 
+                      <td><button class="buttonstart">เริ่มบันทึก<span class="Rightwards-Arrow">&#10140;</span></button></td> 
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
