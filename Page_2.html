@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data collector Page_2</title>
+    <!-- ลิงค์ไอคอน --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Page_2.css"/>
+</head>
+<body>
+
+    <div class="sideber">
+        <div class="logo">
+          <img src="image/logo_มพ.png" alt=""/> 
+          <span>โครงการผู้สูงอายุ ม.พะเยา</span>
+        </div>
+        <ul class="menu">
+            <li class="activer">
+                <a href="#">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>แบบสอบถาม</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <img src="image/user.png" alt=""/>
+                    <span>ผู้เก็บข้อมูล data collector04</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <h1>เเบบสอบถาม</h1>
+        <h5>Home - รอบการตรวจ - รายชื่อผู้เข้าร่วม - ฟอร์มเเบบสอบถาม</h5>
+        <div class="card-container">
+          <img src="image/logo_มพ.png" class="logo">
+          <h2>คณะเเพทย์ศาสตร์</h2>
+          <h5>เเบบประเมินคณะเเพทย์ศาสตร์</h5>
+            <div class="card-container1">
+                <h4>ส่วนที่ 1</h4>
+                <div class="card--wrapper">
+
+                    <div class="search-container">
+                        <h2>เลขประจําตัวประชาชน</h2>
+                        <input type="text" placeholder="ระบุรหัสประชาชน">
+                    </div>
+                    <div class="search-container">
+                        <h4>ชื่อ - นามสกุล</h4>
+                        <input type="text" placeholder="ระบุชื่อ-นามสกุล">
+                    </div>
+
+                    <div class="dropdown">
+                        <h2>เพศกําเนิด</h2>
+                        <div class="select">
+                         <span class="selected">ระบุเพศ</span>
+                         <div class="caret"></div>
+                        </div> 
+                         <ul class="menu1">
+                             <li>ชาย</li>
+                             <li>หญิง</li>
+                         </ul>
+                    </div>
+                    
+                    <div class="datepicker-container">
+                        <input type="text" class="date-input" placeholder="เลือกวันเกิด"/>
+                        <h5>วันเกิด</h5>
+                        <div class="datepicker" hidden>
+                            <!-- .datepicker-header -->
+                            <div class="datepicker-header">
+                                <button class="prev">Prev</button>
+                                <div>
+                                    <select class="month-input">
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+                                    </select>
+                                    <input type="number" class="year-input" />
+                                </div>
+                                <button class="next">Next</button>
+                            </div>
+                            <!-- /.datepicker-header -->
+                            <!-- .days -->
+                            <div class="days">
+                                <span>Sun</span>
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                            </div>
+                            <!-- /.days -->
+                            <!-- .dates -->
+                            <div class="dates"></div>
+                            <!-- /.dates -->
+                            <!-- .datepicker-footer -->
+                            <div class="datepicker-footer">
+                                <button class="cancel">Cancel</button>
+                                <button class="apply">Apply</button>
+                            </div>
+                            <!-- /.datepicker-footer -->
+                        </div>
+                    </div>
+                    
+                    <div class="search-container2">
+                        <h5>อายุ(ปี)</h5>
+                        <input type="text" placeholder="ระบุวันเกิด">
+                    </div>
+                    <div class="search-container2">
+                        <h5>อายุ(เดือน)</h5>
+                        <input type="text" placeholder="ระบุวันเกิด">
+                    </div>
+                    <div class="search-container3">
+                        <h4>เบอร์โทร</h4>
+                        <input type="text" placeholder="ระบุเบอร์โทรศัพท์">
+                    </div>                
+                  
+                </div>            
+              </div>
+
+
+              <div class="card-container2">
+                <h4>ที่อยู่</h4>
+                <div class="dropdown1">
+                  <div class="select1">
+                   <span class="selected1"></span>
+                   <div class="caret1"></div>
+                  </div> 
+                   <ul class="menu2">
+                    <div class="card-container3">
+                      <h5>จังหวัด :</h5>
+                      <h5 id="letter">พะเยา</h5>
+                      <h5>อําเภอ :</h5>
+                      <h5 id="letter">เมืองพะเยา</h5>
+                      <h5>ตําบล :</h5>
+                      <h5 id="letter">เเม่กา</h5>
+                      <h5>หมู่บ้าน :</h5>
+                      <h5 id="letter">เเม่กา/10</h5>
+                      <h5>ที่อยู่ :</h5>
+                      <h5 id="letter">18</h5>
+                      <h5>ซอย :</h5>
+                      <h5 id="letter">-</h5>
+                      <h5>ถนน :</h5>
+                      <h5 id="letter">พหลโยถิน</h5>
+                      <h5>รหัสไปรษณี :</h5>
+                      <h5 id="letter">560110</h5>
+                    </div>
+                   </ul>
+              </div>
+              </div>
+
+              <div class="card-container2">
+                <h4>ข้อมูลส่วนตัว</h4>
+                <div class="dropdown1">
+                  <div class="select1">
+                   <span class="selected1"></span>
+                   <div class="caret1"></div>
+                  </div> 
+                   <ul class="menu2">
+                    <div class="card-container3">
+                        <h5>น้ำหนัก :</h5>
+                        <h5 id="letter">53.8 กิโลกรัม</h5>                        
+                        <h5>ส่วนสูง :</h5>
+                        <h5 id="letter">154 เซนติเมตร</h5>
+                        <h5>BMI :</h5>
+                        <h5 id="letter">22.69</h5>
+                        <h5>สถานภาพสมรส :</h5>
+                        <h5 id="letter">สมรส</h5>
+                        <h5>สถานะผู้เข้าร่วมโครงการ :</h5>
+                        <h5 id="letter">อาสาสมัครสาธารณสุขประจําหมู่บ้าน (อสม)</h5>
+                        <h5>ประจําหมู่บ้านหมู่ที่ :</h5>
+                        <h5 id="letter">หมุ่ที่ 10 บ้านเเม่กาท่าข้าม</h5>
+                        <h5>การศึกษา (ระบุการศึกษาขั้นสูงสุด) :</h5>
+                        <h5 id="letter">ประถมศึกษาตอนปลาย</h5>
+                        <h5>อาชีพปัจจุบัน :</h5>
+                        <h5 id="letter">เกษตรกร</h5>
+                        <h5>รายได้เฉลี่ยต่อเดือนของท่าน :</h5>
+                        <h5 id="letter">-</h5>
+                        <h5>รายได้เฉลี่ยต่อเดือนของครอบครัว :</h5>
+                        <h5 id="letter">ไม่เกิน5000</h5>
+                        <h5>เเหล่งที่มาของรายได้ :</h5>
+                        <h5 id="letter">คู่สมรส</h5>
+                        <h5>โรคประจําตัว :</h5>
+                        <h5 id="letter">ไม่มีโรคประจําตัว</h5>
+                    </div>
+                   </ul>
+              </div>
+              </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="Page_2.js"></script>
+</body>
+</html>
